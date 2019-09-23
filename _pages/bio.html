@@ -1,0 +1,54 @@
+---
+key: 0
+title: Bio
+author: jcaln
+permalink: /bio/
+excerpt: More about me
+image: eu-01.png
+background-image: eu.png
+
+---
+
+{%
+  if page.author %}{%
+    assign auth = site.data.authors[page.author] %}{%
+    assign test1 = auth.avatar | slice: 0,4 %}{%
+    if test1 == "http" %}{%
+      assign pic = auth.avatar %}{%
+    else %}{%
+      assign pic = auth.avatar | prepend: "/images/" | prepend: site.baseurl %}{%
+    endif %}
+<div>{{auth.bio}}</div>  
+<hr/>  
+<div class="table-wrapper">
+  <table>
+    <tbody>
+      <tr>
+        <td><i class="fa fa-user"></i></td>
+        <td>Name</td>
+        <td>{{ auth.name }}</td>        
+      </tr>
+      <tr>
+        <td><i class="fa fa-calendar"></i></td>
+        <td>DOB</td>
+        <td>{{ auth.dob }}</td>        
+      </tr>
+      <tr>
+        <td><i class="fa fa-globe"></i></td>
+        <td>Work Permits</td>
+        <td>{{ auth.permits }}</td>        
+      </tr>
+      <tr>
+        <td><i class="fa fa-envelope"></i></td>
+        <td>Email</td>
+        <td>{{ auth.email }}</td>        
+      </tr>
+      <tr>
+        <td><i class="fa fa-at"></i></td>
+        <td>Web</td>
+        <td>{{ auth.url }}</td>        
+      </tr>
+    </tbody>
+  </table>
+</div>{%
+endif %}
