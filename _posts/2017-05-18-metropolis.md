@@ -4,7 +4,9 @@ title: Metropolis Lab
 excerpt: Head of the Lab (CEO)
 permalink: /experience/jobs/
 categories: experience jobs
-options: [minihead]
+#options: [minihead]
+period: May 2017 to March 2019
+location: Barcelona, Spain
 icon: metropolis.png
 
 tags:
@@ -17,8 +19,6 @@ tags:
   - AWS
   - Firebase
 ---
-
-##### May 2017 to March 2019, Barcelona, Spain
 
 #### Project
 

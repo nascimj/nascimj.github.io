@@ -47,7 +47,7 @@ layout: default
 %}{%    endif
 %}{%  endif
 %}{%  unless page.options contains 'minihead' %}
-      <span id="post-date">{{ page.date  | date: "%-d %B %Y" }}</span><hr
+      <span id="post-date">{{ page.period }}:&nbsp {{ page.location }}</span><hr
         style="margin-top:3px;" />{%
       endunless
 %}{%  if page.categories contains 'works' and page.tags %}
