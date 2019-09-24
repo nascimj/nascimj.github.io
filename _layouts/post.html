@@ -46,10 +46,6 @@ layout: default
 %}{%      include fn_sortednav.html posclass='btntop'
 %}{%    endif
 %}{%  endif
-%}{%  unless page.options contains 'minihead' %}
-      <span id="post-date">{{ page.period }}:&nbsp {{ page.location }}</span><hr
-        style="margin-top:3px;" />{%
-      endunless
 %}{%  if page.categories contains 'works' and page.tags %}
       <h4>Skills</h4>
   {%    assign work = page

@@ -41,12 +41,12 @@ background-image: eu.png
       <tr>
         <td><i class="fa fa-envelope"></i></td>
         <td>Email</td>
-        <td>{{ auth.email }}</td>        
+        <td><a href="mailto:{{ auth.email }}">{{ auth.email }}</a></td>        
       </tr>
       <tr>
         <td><i class="fa fa-at"></i></td>
         <td>Web</td>
-        <td>{{ auth.url }}</td>        
+        <td><a href="{{ auth.url }}" target="_blank">{{ auth.url }}</a></td>        
       </tr>
     </tbody>
   </table>
