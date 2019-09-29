@@ -5,8 +5,8 @@ layout: default
     <div class="inner{% if page.options contains 'fullwidth' %} fullwidth{% endif %}">{%
       unless site.navlinks == 'none'
 %}{%    if page.categories contains 'works'
-%}{%      assign idxperma = '/works/' | prepend: site.baseurl
-%}{%      assign idxtitle = 'Works Index'
+%}{%      assign idxperma = '/projects/' | prepend: site.baseurl
+%}{%      assign idxtitle = 'Projects Index'
 %}{%      assign idxbutton = 'Index'
 %}{%      include fn_groupsort_reverse.html unsorted=site.categories.works groupby='priority' sortby='date'
 %}{%    endif
