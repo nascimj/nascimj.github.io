@@ -7,8 +7,6 @@ I hacked it to shoe-horn more of a CV format, while still maintaining the design
 - [Features](https://arkadianriver.github.io/arkadianriver.com/topics/user-guide/features.html)
 - [Authoring Guide](https://arkadianriver.github.io/arkadianriver.com/topics/user-guide/)
 
-## Theme note
-This is a theme in the old sense of the word. This is not a newer _gem-based_ theme (yet).
 
 ## License
 MIT
